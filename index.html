@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="logo">Florence</div>
+        <img src="img/capa.png" class="bg" alt="">
+        <div class="content">
+            <h2>Let the fragrance
+                <br>breathe out the best in you</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod nunc at nisl pellentesque, quis finibus dui bibendum. Vestibulum luctus euismod tortor sit amet faucibus. Cras sodales sollicitudin orci a luctus.</p>
+            <a href="#">Get Start</a>
+        </div>
+        <p class="copyrightText">©2021. Student Practice</p>
+    </section>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/"><img src="img/facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/"><img src="img/twitter.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a>
+                </li>
+            </ul>
+            <a href="mailto:you@email.com" class="emailBx"><img src="img/email.png" alt=""></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function toggleMenu() {
+            let menuToggle = document.querySelector('.menuToggle');
+            let navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
